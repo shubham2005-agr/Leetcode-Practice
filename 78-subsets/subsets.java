@@ -23,7 +23,7 @@ class Solution{
         for(int i=0;i<subsets;i++){
             List<Integer> a = new ArrayList<>();
             for(int j=0;j<n;j++){
-            if((i>>j)%2==1) a.add(arr[j]);
+            if(((i>>j)&1)==1) a.add(arr[j]);
             }
             ans.add(a);
         }
