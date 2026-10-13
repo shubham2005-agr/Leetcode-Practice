@@ -13,7 +13,6 @@ class Solution {
             } else {
                 score -= squares[n - 1 - i];
             }
-        }
-        return score;
+        }return score;
     }
 }
